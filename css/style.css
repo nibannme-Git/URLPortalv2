@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+/* --- Boot Screen --- */
+#boot-screen {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+
+/* --- GRUB Screen --- */
+#grub-screen {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/background.jpg") center/cover no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-box {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ccc;
+  padding: 20px 40px;
+  font-family: monospace;
+}
+
+#menu {
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  list-style: none;
+  padding: 5px 0;
+  cursor: default;
+}
+
+#menu li.selected {
+  background: #444;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
